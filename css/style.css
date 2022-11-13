@@ -1,0 +1,183 @@
+/* PART 1: Write these rules on your own. */
+
+body{
+  /* make all text courier, set margin and padding to 10px */
+  font-family: 'Noto Sans', sans-serif;
+  display: grid;
+  margin: 10px;
+  padding: 10px;
+  grid-template-columns: 1fr;
+  background-image: url('../images/camo-black.png');;
+  /* grid-template-rows: 1fr 1fr 1fr; */
+}
+
+nav{
+  background-color: #0acef9;
+}
+
+h1{
+  /* make your headers 32px, #128ded color and bold */
+  font-size: 70px;
+  color: #f9840e;
+  font-weight: bold;
+}
+
+h2{
+  /* make your headers 32px, #128ded color and bold */
+  font-size: 60px;
+
+  color: #0acef7;
+  font-weight: bold;
+}
+
+h3{
+  /* make your headers 32px, #128ded color and bold */
+  font-size: 30px;
+  color: #b9e713;
+  font-weight: bold;
+}
+
+p{
+  /* make your paragraphs 14pt, double-spaced and 10px of padding on the left and right */
+  font-size: 25pt;
+  line-height: 2;
+  padding: 0 10px;
+  color: azure;
+}
+
+
+/* Part 2: And now debug..... */
+a{
+  /* make your links red, use italics, and be underlined */
+  color: #ff44cd;
+  font-weight: 800;
+  text-decoration: underline;
+  font-size: large;
+}
+
+
+a:hover{
+  /* make the background color of your link black and the text white when you hover over it */
+  color: yellow;
+  /* background-color: #00f8a2; */
+}
+
+
+img{
+  padding: 10px;
+  /* max-height: 80%; */
+  margin: 10px 10px;
+  border: 15px inset #f71ebe;
+  width: 600px;
+
+}
+
+
+
+.homepage .gallery .characters .weapon {
+  text-decoration-color: pink;
+}
+
+img:hover {
+  transform: scaleX(-1);
+}
+
+ul{
+  /* make bullet points red squares */
+  display: flex;
+  height: 300px;
+  text-align: center;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+  list-style: none;
+  color: red;
+  background-image: url('../images/tapes-purple.jpg');
+}
+
+nav a {
+  font-size: 30px;
+}
+
+.head-img{
+  width: 800px;
+}
+.sticker-1{
+  width: 300px;
+  border: none;
+  animation: zoom-in-zoom-out 1s 1 alternate forwards;
+}
+
+.sticker-2{
+  width:auto;
+  height:250px;
+  border: none;
+  animation: zoom-in-zoom-out 1s 1 alternate forwards;
+}
+
+.sticker-box{
+  display: flex;
+  justify-content:center;
+  align-items: flex-end;
+}
+
+.head-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  100% {
+    transform: scale(1.5, 1.5);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .sticker{
+  animation: none;}
+}
+.footer{
+  /* style the footer so it has a black background and white text */
+  color: white;
+  background-color: black;
+}
+
+.galleryimg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.weaponimg-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weaponimg-box p{
+  font-size: 30pt;
+}
+
+.charactersimg-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+aside {
+  width: 40%;
+  padding-left: .5rem;
+  margin-left: .5rem;
+  float: right;
+  box-shadow: inset 5px 0 5px -5px #29627e;
+  font-style: italic;
+  color: #29627e;
+}
+
+aside > p {
+  margin: .5rem;}
